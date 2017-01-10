@@ -1,0 +1,5 @@
+.example {
+	font-size: 5vmax;
+	margin-left: calc(1vmax + 20px);
+	padding: 5vmax 3vmax;
+}

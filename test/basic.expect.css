@@ -1,0 +1,19 @@
+@media (orientation: landscape) {
+	.example {
+		font-size: 5vw;
+		margin-left: calc(1vw + 20px);
+		padding: 5vw 3vw;
+	}
+}
+@media (orientation: portrait) {
+	.example {
+		font-size: 5vh;
+		margin-left: calc(1vh + 20px);
+		padding: 5vh 3vh;
+	}
+}
+.example {
+	font-size: 5vmax;
+	margin-left: calc(1vmax + 20px);
+	padding: 5vmax 3vmax;
+}

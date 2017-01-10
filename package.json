@@ -1,0 +1,63 @@
+{
+  "name": "postcss-vmax",
+  "version": "1.0.0",
+  "description": "Use vmax units in Edge and Internet Explorer",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "jonathantneal/postcss-vmax",
+  "homepage": "https://github.com/jonathantneal/postcss-vmax#readme",
+  "bugs": "https://github.com/jonathantneal/postcss-vmax/issues",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "npm run lint:ec && npm run lint:js",
+    "lint:ec": "echint",
+    "lint:js": "eslint *.js --cache --ignore-pattern .gitignore",
+    "pre-commit": "echo 'Running pre-commit checks...' && exit 0",
+    "prepublish": "npm test",
+    "tape": "postcss-tape",
+    "test": "npm run lint && postcss-tape"
+  },
+  "engines": {
+    "node": ">=6.5.0"
+  },
+  "dependencies": {
+    "postcss": "^5.2.9"
+  },
+  "devDependencies": {
+    "echint": "^2.1.1",
+    "echint-config-dev": "1.0.0",
+    "eslint": "^3.13.1",
+    "eslint-config-dev": "1.0.0",
+    "postcss-tape": "1.3.0",
+    "pre-commit": "^1.2.2"
+  },
+  "echint": {
+    "extends": "dev"
+  },
+  "eslintConfig": {
+    "extends": "dev",
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "pre-commit": [
+    "pre-commit",
+    "test"
+  ],
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "vmax",
+    "support",
+    "fallback",
+    "media",
+    "query",
+    "queries",
+    "edge",
+    "ie"
+  ]
+}
